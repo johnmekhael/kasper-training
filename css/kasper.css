@@ -673,3 +673,24 @@ header .form i {
   color: #fff;
   border: none;
 }
+
+.about {
+  padding-top: var(--section-padding);
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.about img {
+  position: relative;
+  margin-top: -350px;
+  bottom: -200px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .about img {
+    bottom: -90px;
+    margin-top: -180px;
+  }
+}
