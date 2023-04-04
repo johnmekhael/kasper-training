@@ -602,3 +602,24 @@ header .form i {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
+
+.img-content .box .caption h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.img-content .box .caption p {
+  color: var(--main-color);
+}
+
+.portfolio .more {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 15px 20px;
+  margin: 20px auto;
+  width: fit-content;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
