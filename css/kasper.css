@@ -763,4 +763,155 @@ header .form i {
   margin: 0 0 20px;
 }
 
-.stats .container .box p {}
+.skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.skills .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+  .skills .container>div {
+    flex-basis: 45%;
+  }
+}
+
+
+
+.skills .container>div>h3 {
+  margin: 0 0 30px;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.skills .container>div>p {
+  color: #777;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills .testimonials .box {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.skills .testimonials .box img {
+  width: 20%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 30px;
+}
+
+.skills .testimonials .box .text {
+  line-height: 1.8;
+  border-bottom: 1px solid #ccc;
+}
+
+.skills .testimonials .box .text p {
+  color: #777;
+  font-size: 14px;
+  text-align: right;
+}
+
+@media (max-width:767px) {
+  .skills .testimonials .box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills .testimonials .box img {
+    margin: 0 auto 20px;
+  }
+}
+
+.skills .testimonials .bullets {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.skills .testimonials .bullets li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid #aaa;
+}
+
+.skills .testimonials .bullets .active {
+  background-color: var(--main-color);
+}
+
+.skills .our-skills .prog-box {
+  margin-bottom: 50px;
+}
+
+.skills .our-skills .prog-box h4 {
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.skills .our-skills .prog-box .prog-bar {
+  height: 30px;
+  background-color: #949496;
+
+}
+
+.skills .our-skills .prog-box .prog-bar span {
+  height: 100%;
+  background-color: var(--main-color);
+  display: block;
+  position: relative;
+}
+
+.skills .our-skills .prog-box .prog-bar span::before {
+  content: attr(data-progress);
+  background-color: black;
+  color: #fff;
+  width: 40px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: -35px;
+  right: 1px;
+  transform: translateX(50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.skills .our-skills .prog-box .prog-bar span::after {
+  content: "";
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: -10px;
+  right: 1px;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
