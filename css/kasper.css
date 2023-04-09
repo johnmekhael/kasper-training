@@ -952,3 +952,121 @@ header .form i {
   font-style: italic;
 
 }
+
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px
+}
+
+.pricing .plans .box {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+
+.pricing .plans .box .head {
+  padding: 40px 20px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .box .head h2 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pricing .plans .box .head span {
+  font-size: 60px;
+  font-weight: 600;
+  position: relative;
+}
+
+.pricing .plans .box .head span::before {
+  content: "$";
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+.pricing .plans .box .head span::after {
+  content: "/Mo";
+  font-size: 20px;
+  position: absolute;
+  bottom: 15px;
+  right: -45px;
+  font-weight: normal;
+}
+
+.pricing .plans .box ul {
+  border-bottom: 1px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing .plans .box ul li {
+  padding: 25px 0;
+  width: fit-content;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.pricing .plans .box ul li:not(:last-child) {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .box .foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing .plans .box .foot a {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  color: #636364;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+}
+
+.pricing .container p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  color: #777;
+  padding-top: var(--section-padding);
+}
+
+.pricing .container .contact-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px auto 30px;
+  padding: 25px;
+  border-radius: 5px;
+  font-size: 30px;
+  color: #fff;
+  background-color: var(--main-color);
+  width: fit-content;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
