@@ -1160,4 +1160,97 @@ header .form i {
   .subscribe .container p {
     margin: 30px 0 0;
   }
+
+  .subscribe .container form,
+  .subscribe .container p {
+    width: 100%;
+  }
+}
+
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.contact .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width:767px) {
+  .contact .content {
+    flex-direction: column;
+  }
+}
+
+.contact .content form {
+  flex-basis: 70%;
+}
+
+.contact .content form .main-input {
+  padding: 20px;
+  display: block;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.contact .content form textarea.main-input {
+  height: 200px;
+}
+
+.contact .content form input[type="submit"] {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  margin-left: auto;
+  border: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact .content .info {
+  flex-basis: 25%;
+}
+
+.contact .content .info h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact .content .info h4:last-of-type {
+  margin-top: 80px;
+}
+
+@media(max-width:767px) {
+
+  .contact .content .info h4,
+  .contact .content .info span,
+  .contact .content .info address {
+    text-align: center;
+  }
+
+  .contact .content .info {
+    margin-top: 30px;
+  }
+}
+
+.contact .content .info span {
+  display: block;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+
+
+.contact .content .info address {
+  color: #777;
+  line-height: 2;
 }
