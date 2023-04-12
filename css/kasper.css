@@ -174,11 +174,17 @@ header nav .toggle-menu {
 
 header nav ul {
   display: flex;
+  position: absolute;
+  left: 212px;
 }
 
 @media (max-width: 767px) {
   header nav ul {
     display: none;
+  }
+
+  header .form input[type=search] {
+    width: 50px;
   }
 
   header nav .toggle-menu:hover+ul {
@@ -220,6 +226,16 @@ header .form {
   margin-left: 40px;
   border-left: 1px solid white;
   position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header .form input[type=search] {
+  display: block;
+  position: absolute;
+  left: -153px;
+  width: 146px;
+  height: 40px;
 }
 
 header .form i {
