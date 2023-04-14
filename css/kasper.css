@@ -184,7 +184,11 @@ header nav ul {
   }
 
   header .form input[type=search] {
-    width: 50px;
+    visibility: hidden;
+  }
+
+  header .form .fa-search:hover input[type=search] {
+    display: block;
   }
 
   header nav .toggle-menu:hover+ul {
